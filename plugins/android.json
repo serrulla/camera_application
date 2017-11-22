@@ -15,6 +15,9 @@
     },
     "cordova-plugin-file": {
       "PACKAGE_NAME": "com.ericsg1.camera"
+    },
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "com.ericsg1.camera"
     }
   },
   "dependent_plugins": {}
