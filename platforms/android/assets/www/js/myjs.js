@@ -34,7 +34,7 @@ function onFail(message){
 }
 
 function save(){
-alert("Strike a pose!");
+
 
 navigator.camera.getPicture(onSuccess, onFail, {quality: 58, destinationType: Camera.DestinationType.FILE_URI});
 
