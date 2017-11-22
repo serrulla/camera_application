@@ -12,6 +12,9 @@
     },
     "cordova-plugin-whitelist": {
       "PACKAGE_NAME": "com.ericsg1.camera"
+    },
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "com.ericsg1.camera"
     }
   },
   "dependent_plugins": {}

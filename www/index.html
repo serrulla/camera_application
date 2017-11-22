@@ -36,18 +36,56 @@
         <link rel="stylesheet" href="js\jquery-mobile-1.4.5\jquery.mobile-1.4.5.min.css">
         <script src="js\jquery-2.1.0.js"></script>
         <script src="js\jquery-mobile-1.4.5\jquery.mobile-1.4.5.min.js"></script>
-        <script src="js\myjs.js"></script>
-        <title>Hello World</title>
+
+        <title>Camerapp</title>
+
     </head>
     <body>
-        <div class="app">
-            <h1>Apache Cordova</h1>
-            <div id="deviceready" class="blink">
-                <p class="event listening">Connecting to Device</p>
-                <p class="event received">Device is Ready</p>
-            </div>
+    <div data-role="page" id="demoPage">
+
+        <div data-role="header"> <!-- Header -->
+            <h1>Camerapp - Eric S.</h1>
         </div>
-        <script type="text/javascript" src="cordova.js"></script>
+
+        <div role="main" class="ui-content"> <!-- Content -->
+
+            <a href="#panelDemo" data-role="button"
+               data-inline="true" data-icon="camera">←Click me</a>
+            <!-- id must be same as panel-->
+            <div>
+             <h6>Your pic:</h6>
+            <img id="image" src="img\default-img.gif">
+                </div>
+        </div>
+
+
+
+        <div data-role="footer"> <!-- footer -->
+            <h3>Camerapp - Eric S.</h3>
+        </div>
+
+
+        <!-- Panel Element Must Before or after all Header, Footer and Content -->
+        <!-- Panel   -->
+        <div data-role="panel" id="panelDemo" data-theme="b">
+            <!-- date-role="panel" creates a panel -->
+
+            <div class="panel-content">
+                <h3>Panel Contents</h3>
+                <ul data-role="listview" data-inset="true" data-theme="a" >
+                    <li id="but"><a href="#">Camera</a></li>
+                    <li id="cam"><a href="#">Take & save photos</a></li>
+                    <li id="gal"><a href="#">My pictures</a></li>
+                    <li><a href="#">Credits</a></li>
+                </ul>
+                <a data-rel="close" data-role="button" data-theme="a"
+                   data-icon="delete" data-inline="true">Close</a>
+            </div><!-- /.panel-content-->
+
+        </div><!-- /panelDemo -->
+    </div>
+      <script type="text/javascript" src="cordova.js"></script>
         <script type="text/javascript" src="js/index.js"></script>
+    <script src="js\myjs.js"></script>
     </body>
 </html>
